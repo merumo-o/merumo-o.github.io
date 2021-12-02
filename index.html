@@ -1,33 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>merumoのPortfolio</title>
+    <meta charset="UTF-8" />
+    <title>ARTWORK/merumo</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <h1>merumoのPortfolio</h1>
+    <nav class="all">
+      <ul>
+        <li class="current-page"><a href="#TOP">ARTWORK</a></li>
+        <li><a href="./profile.html">PROFILE</a></li>
 
-    <p>
-      これは私が初めて作ったウェブページです。merumoの作品を紹介していきます。
-    </p>
+        <li><a href="./hobby.html">HOBBY</a></li>
 
-    <h2>p5.jsの作品</h2>
-    <iframe
-      width="800"
-      height="800"
-      src="https://editor.p5js.org/2003660/embed/zVM_48d20"
-    ></iframe>
-
-    <iframe
-      width="600"
-      height="600"
-      src="https://editor.p5js.org/2003660/embed/kwKmh9WYb"
-    ></iframe>
-
-    <h2>その他の作品</h2>
-    <img width="400" src="bird.jpg" />
-    <img width="400" src="merumoI.jpg" />
+        <a href="https://twitter.com/Mee_6o"
+          ><img src="./image/twitter.png" alt="twitter"
+        /></a>
+        <img src="./image/instagram.png" alt="instagram" />
+      </ul>
+    </nav>
+    <div class="topimage">
+      <img src="./image/topimage.png" alt="topimage" id="TOP" />
+    </div>
+    <header class="topheader">
+      <h1>Portfolio</h1>
+      <p>-merumo-</p>
+    </header>
+    <main>
+      <section>
+        <div class="schoolwork">
+          <h3>schoolwork</h3>
+          <video
+            src="./video/topvideo.mp4"
+            poster="./image/topvideo's image.png"
+            controls
+            autoplay
+          ></video>
+        </div>
+      </section>
+      <section>
+        <div class="works"><h3>WORKS</h3></div>
+        <div class="worksimages">
+          <div class="worksimages1">
+            <div class="yorunokatasumi">
+              <a href="https://youtu.be/ypgqhZR0kzo">
+                <img src="./image/yorunokatasumi.png" alt="WORKS"
+              /></a>
+              <p>
+                <strong>ヨルノカタスミ/kobore Guitar Cover-どももん</strong>
+                <br />撮影・MVお手伝い
+              </p>
+            </div>
+            <div class="vampire">
+              <a href="https://youtu.be/biCHusjShhM">
+                <img src="./image/vampire.png" alt="WORKS"
+              /></a>
+              <p>
+                <strong>ヴァンパイア/DECO*27 Cover-あるなみ</strong> <br />
+                イラスト・一部オリジナルMV
+              </p>
+            </div>
+            <div class="envy baby">
+              <a href="https://youtu.be/PSzOJjKTID8"
+                ><img src="./image/envybaby.png" alt=""
+              /></a>
+              <p>
+                <strong>エンヴィーベイビー/Kanaria Cover-碧葉ゆう</strong>
+                <br />
+                イラスト
+              </p>
+            </div>
+          </div>
+          <div class="worksimages2">
+            <div class="KING">
+              <a href="https://youtu.be/zkLIA0_bic0">
+                <img src="./image/KING.png" alt=""
+              /></a>
+              <p>
+                <strong>KING/kanaria Cover-あるなみ</strong> <br />
+                イラスト
+              </p>
+            </div>
+            <div class="dryflower">
+              <a href="https://youtu.be/BY6z_9xS3w0"
+                ><img src="./image/dryflower.png" alt=""
+              /></a>
+              <p>
+                <strong>ドライフラワー/優里 Cover-碧葉ゆう</strong
+                ><br />イラスト
+              </p>
+            </div>
+            <div class="mao">
+              <img src="image/mao.png" alt="" />
+              <p>
+                <strong>マオ/かいりきベア・まふまふ　Cover-???</strong> <br />
+                イラスト
+              </p>
+            </div>
+          </div>
+          <div class="worksimages3">
+            <div class="syoujyorei">
+              <img src="image/syoujyorei.png" alt="" />
+              <p>
+                <strong>少女レイ/みきとP Cover-???</strong> <br />
+                イラスト
+              </p>
+            </div>
+            <div class="sirubupre">
+              <img src="image/sirubupre.png" alt="" />
+              <p>
+                <strong>シル・ヴ・プレジデント/P丸様。Cover-???</strong> <br />
+                イラスト
+              </p>
+            </div>
+            <div class="neko">
+              <img src="image/neko.png" alt="" />
+              <p>　</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©meromo</p>
+    </footer>
   </body>
 </html>
