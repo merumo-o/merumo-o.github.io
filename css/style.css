@@ -1,0 +1,510 @@
+/* https://toretama.jp/click-big-image-floaty.html
+写真をクリックしたら拡大されるようにしたかったため使用しました。 */
+
+body {
+  margin: 0 auto;
+  background-color: rgb(229, 236, 243);
+  box-sizing: border-box;
+  color: rgb(63, 63, 73);
+}
+
+.all a {
+  text-decoration: none;
+  color: rgb(94, 80, 145);
+}
+.all li {
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Arial Narrow";
+}
+.all ul {
+  text-align: center;
+  position: fixed;
+
+  background-color: rgb(246, 250, 253);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+}
+.all {
+  list-style: none;
+}
+.current-page {
+  background-color: rgb(229, 236, 243);
+  padding: 5px 0px;
+}
+
+.all li a:hover {
+  background-color: rgb(229, 236, 243);
+  padding: 5px 15px;
+}
+.all a:hover img {
+  opacity: 0.6;
+}
+ul img {
+  width: 30px;
+  margin-bottom: -5px;
+}
+img[alt="twitter"] {
+  margin-left: 50px;
+  margin-right: 10px;
+}
+.topimage {
+  text-align: center;
+}
+.topheader {
+  text-align: center;
+  background-color: rgba(146, 191, 212, 0.5);
+  margin-top: -400px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 5px;
+  color: rgb(14, 49, 126);
+  font-size: 25px;
+}
+header p {
+  margin-top: -50px;
+}
+
+.schoolwork {
+  text-align: center;
+}
+.schoolwork video {
+  max-width: 1000px;
+}
+.schoolwork h3 {
+  margin-top: 200px;
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: rgb(64, 10, 114);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+}
+.schoolwork img {
+  max-width: 1000px;
+  margin-top: 100px;
+}
+.works {
+  text-align: center;
+  color: rgb(64, 10, 114);
+}
+.works h3 {
+  margin-top: 100px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+}
+.worksimages1 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.worksimages img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.worksimages a:hover {
+  opacity: 0.6;
+}
+.worksimages strong {
+  font-size: 20px;
+}
+.worksimages p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.worksimages2 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.worksimages3 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+footer {
+  text-align: center;
+  background-color: rgb(97, 83, 145);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  color: rgb(224, 230, 235);
+}
+.PROFILE {
+  text-align: center;
+  padding-top: 100px;
+}
+.PROFILE h2 {
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(64, 10, 114);
+}
+.PROFILE img[alt="icon"] {
+  margin-top: 30px;
+  width: 250px;
+  margin-bottom: -20px;
+}
+.PROFILE img[alt="sns"] {
+  max-width: 25px;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.profilewrite strong {
+  font-size: 30px;
+}
+.name p::first-letter {
+  font-size: 50px;
+}
+.name {
+  margin-top: 35px;
+  color: rgb(37, 76, 150);
+}
+.profilewrite p {
+  margin-top: -25px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content p {
+  margin-top: 15px;
+  font-weight: normal;
+}
+.profilewrite a:hover img {
+  opacity: 0.6;
+}
+hr {
+  margin-top: 70px;
+  border-top: dashed 1px;
+}
+.CONTACT h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(64, 10, 114);
+}
+input {
+  border: none;
+  width: 480px;
+  height: 40px;
+  background-color: rgb(238, 203, 215);
+}
+textarea {
+  border: none;
+  width: 480px;
+  height: 250px;
+  background-color: rgb(246, 250, 253);
+}
+#question {
+  border: none;
+  width: 480px;
+  height: 40px;
+  padding-left: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[name="gender"] {
+  max-width: 15px;
+}
+.radiobutton {
+  font-size: smaller;
+}
+.checkbutton {
+  font-size: smaller;
+}
+input[name="Client"] {
+  max-width: 15px;
+}
+
+table {
+  border-collapse: collapse;
+
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 700px;
+  height: 500px;
+  font-size: 20px;
+  border: solid rgb(102, 58, 143) 2px;
+  margin-bottom: 200px;
+}
+td,
+th {
+  border: solid rgb(127, 103, 150) 1px;
+  padding: 1ex;
+}
+th p::after {
+  content: "*";
+  font-size: smaller;
+  color: rgb(211, 87, 87);
+}
+button[type="submit"] {
+  background-color: rgb(102, 58, 143);
+  border: none;
+  color: rgb(246, 250, 253);
+  padding: 15px 40px;
+  border-radius: 50px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+button[type="reset"] {
+  background-color: rgb(251, 252, 253);
+  border: none;
+  color: rgb(89, 38, 136);
+  padding: 15px 40px;
+  border-radius: 50px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+th {
+  font-size: smaller;
+}
+input {
+  padding: 0 0 0 2%;
+  width: 90%;
+}
+button:hover {
+  opacity: 1;
+}
+.hobby {
+  text-align: right;
+  padding-top: 150px;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.hobbyheader h2,
+.hobbyheader p {
+  text-align: left;
+  margin-left: 400px;
+
+  font-size: 50px;
+  margin-top: -450px;
+}
+.hobby h2 {
+  color: rgb(18, 54, 99);
+  margin-left: 460px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hobby p {
+  margin-top: -60px;
+  color: rgb(251, 252, 253);
+  font-size: 30px;
+  margin-left: 420px;
+}
+.hobbynav ul {
+  margin-top: -15px;
+}
+.hobbynav li {
+  text-align: left;
+  margin-left: 470px;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.hobbynav a {
+  text-decoration: none;
+  color: rgb(29, 28, 28);
+  font-size: larger;
+}
+.hobbynav a:hover {
+  color: rgb(9, 116, 165);
+}
+.hobbynav li::first-letter {
+  color: rgb(66, 79, 150);
+}
+.hobbynav + p {
+  color: rgb(225, 139, 129);
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 461px;
+}
+.PHOTO {
+  margin-left: 300px;
+  margin-top: -730px;
+  margin-bottom: -70px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(18, 54, 99);
+}
+img[alt="domomonside"] {
+  max-width: 500px;
+  padding: 100px 200px;
+  padding-bottom: 100px;
+  padding-right: 800px;
+  background-color: rgba(112, 140, 160, 0.493);
+  margin-top: 400px;
+}
+
+img[alt="cameraphoto"] {
+  max-width: 300px;
+  margin-left: 850px;
+  margin-bottom: -435px;
+}
+img[alt="darkdomomon"] {
+  max-width: 300px;
+  margin-left: 1100px;
+  margin-bottom: -610px;
+}
+.subhobbyphoto {
+  max-width: 1061px;
+  margin: 200px auto;
+  margin-top: 800px;
+  float: center;
+}
+.subhobbyphoto img {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  max-width: 300px;
+}
+.hobbyphoto {
+  overflow: hidden;
+}
+.hobbyillust {
+  text-align: right;
+}
+.ILLUST {
+  clear: both;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(18, 54, 99);
+  margin-right: 250px;
+  margin-top: -730px;
+}
+img[alt="chihuyu"] {
+  max-width: 500px;
+
+  padding: 100px 200px;
+  padding-left: 800px;
+  padding-bottom: 100px;
+  background-color: rgba(129, 155, 156, 0.493);
+}
+img[alt="izam"] {
+  max-width: 300px;
+  margin-top: 40px;
+  margin-right: 800px;
+}
+img[alt="nunnta"] {
+  max-width: 300px;
+  margin-top: -110px;
+  margin-right: 1050px;
+}
+.subhobbyillust {
+  max-width: 1061px;
+  margin: 200px auto;
+  float: center;
+}
+.subhobbyillust img {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 50px;
+  max-width: 300px;
+}
+.hobbyall {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.another h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(18, 54, 99);
+}
+.anotherhobby {
+  background: rgba(103, 134, 115, 0.6);
+  padding: 100px;
+  color: aliceblue;
+  margin-top: -55px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+.anotherhobby1 img,
+.anotherhobby1 video {
+  width: 600px;
+}
+.anotherhobby figcaption {
+  margin-top: -10px;
+}
+.anotherhobby1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.anotherhobby2 video,
+.anotherhobby2 img {
+  max-width: 450px;
+  max-height: 450px;
+}
+.anotherhobby3 video,
+.anotherhobby3 img {
+  max-width: 450px;
+  max-height: 450px;
+}
+.anotherhobby2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.anotherhobby3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.anotherhobby4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.anotherhobby4 img {
+  max-width: 300px;
+}
+.anotherhobby5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.anotherhobby5 img {
+  max-width: 500px;
+}
+.anotherhobby5 a:hover {
+  opacity: 0.7;
+}
+.lastmessege img {
+  max-width: 250px;
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: -50px;
+}
+.lastmessege {
+  margin-top: 100px;
+  text-align: center;
+}
+.lastmessege {
+  color: dimgray;
+  font-size: 25px;
+}

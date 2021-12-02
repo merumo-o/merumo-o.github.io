@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PROFILE/merumo</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="all">
+      <ul>
+        <li><a href="./index.html">ARTWORK</a></li>
+        <li class="current-page"><a href="#PROFILE">PROFILE</a></li>
+
+        <li><a href="./hobby.html">HOBBY</a></li>
+
+        <a href="https://twitter.com/Mee_6o">
+          <img src="./image/twitter.png" alt="twitter" />
+        </a>
+        <img src="./image/instagram.png" alt="instagram" />
+      </ul>
+    </nav>
+
+    <main id="PROFILE">
+      <article>
+        <section class="PROFILE">
+          <h2>PROFILE</h2>
+          <img src="image/profile1.png" alt="icon" />
+          <div class="profilewrite">
+            <div class="name">
+              <p>
+                <strong>merumo</strong>
+              </p>
+            </div>
+            <p>一般学生</p>
+            <div class="content">
+              <p>
+                <br />birthday:2001/10/8
+                <br />from:兵庫県<br />
+                これからWebを学ぶ学生です。<br />
+                イラスト、CG、モーショングラフィックス含めた映像も勉強中です。
+              </p>
+            </div>
+            <a href="https://twitter.com/Mee_6o">
+              <img src="image/twitter2.png" alt="sns"
+            /></a>
+            <img src="image/instagram2 .png" " alt="sns" />
+          </div>
+        </section>
+      </article>
+      <section class="CONTACT">
+        <hr />
+        <h2>CONTACT</h2>
+        <form action="merumo" method="POST">
+          <table>
+            <tr>
+              <th class="required"><p>Name</p></th>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  value=""
+                  placeholder=" merumo"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><p>Mail address</p></th>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder=" merumo@sample.jp"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>　 Category 　</th>
+              <td>
+                <select name="question" id="question">
+                  <option value="colspan">可能なことについて</option>
+                  <option value="money">依頼料金について</option>
+                  <option value="day">日程について</option>
+                  <option value="another">その他</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><p>gender</p></th>
+              <td>
+                <div class="radiobutton">
+                  <input type="radio" name="gender" required />男
+                  <input type="radio" name="gender" required />女
+                  <input type="radio" name="gender" required />その他
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Client</th>
+              <td>
+                <div class="checkbutton">
+                  <input type="checkbox" name="Client" />企業
+                  <input type="checkbox" name="Client" />個人
+                  <input type="checkbox" name="Client" />その他
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>Message</th>
+              <td>
+                <textarea
+                  name="content"
+                  id="content"
+                  cols="20"
+                  rows="10"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="submit" value="送信する">送信する</button>
+
+                <button type="reset">取り消し</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>©meromo</p>
+    </footer>
+  </body>
+</html>
