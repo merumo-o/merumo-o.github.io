@@ -321,7 +321,7 @@ img[alt="camera"] {
   margin-bottom: -435px;
 }
 .mainhobbyphoto {
-  max-width: 1750px;
+  max-width: 1500px;
 }
 .mainhobbyphoto P {
   font-size: larger;
@@ -329,12 +329,13 @@ img[alt="camera"] {
   margin-left: 1250px;
 }
 .subhobbyphoto {
-  max-width: 1061px;
+  max-width: 1050px;
   margin: 200px auto;
   margin-top: 800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 .subhobbyphoto img {
   margin-left: 25px;
