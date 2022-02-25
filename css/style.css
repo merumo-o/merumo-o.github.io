@@ -52,27 +52,31 @@ img[alt="twitter"] {
 }
 .topimage {
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .topheader {
   text-align: center;
-  background-color: rgba(146, 191, 212, 0.5);
-  margin-top: -400px;
+
+  margin-top: -500px;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 5px;
-  color: rgb(14, 49, 126);
+  color: rgb(19, 22, 59);
   font-size: 25px;
 }
 header p {
   margin-top: -50px;
+  color: rgb(87, 103, 156);
 }
 
 .schoolwork {
+  margin-top: 300px;
   text-align: center;
 }
 .schoolwork video {
-  max-width: 1000px;
+  max-width: 800px;
 }
 .schoolwork h3 {
   margin-top: 200px;
@@ -87,14 +91,18 @@ header p {
   max-width: 1000px;
   margin-top: 100px;
 }
+.schoolwork p {
+  font-size: 20px;
+  margin-top: 10px;
+}
 .works {
   text-align: center;
   color: rgb(64, 10, 114);
 }
 .works h3 {
-  margin-top: 100px;
+  margin-top: 150px;
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
 }
@@ -103,6 +111,7 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
 }
 .worksimages img {
   margin-left: 10px;
@@ -131,6 +140,64 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+}
+.worksimages5 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.worksimages4 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+}
+.worksimages6 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.worksimages7 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.worksimages8 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.worksimages9 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.twitter a:hover {
+  opacity: 0.6;
+}
+
+.twitter {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 200px;
+}
+.twitter p {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 5px;
+  font-size: small;
 }
 footer {
   text-align: center;
@@ -187,94 +254,26 @@ hr {
   margin-top: 70px;
   border-top: dashed 1px;
 }
-.CONTACT h2 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 5px;
-  color: rgb(64, 10, 114);
-}
-input {
-  border: none;
-  width: 480px;
-  height: 40px;
-  background-color: rgb(238, 203, 215);
-}
-textarea {
-  border: none;
-  width: 480px;
-  height: 250px;
-  background-color: rgb(246, 250, 253);
-}
-table {
-  border-collapse: collapse;
 
-  border-spacing: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 700px;
-  height: 500px;
-  font-size: 20px;
-  border: solid rgb(102, 58, 143) 2px;
-  margin-bottom: 200px;
-}
-td,
-th {
-  border: solid rgb(127, 103, 150) 1px;
-  padding: 1ex;
-}
-th p::after {
-  content: "*";
-  font-size: smaller;
-  color: rgb(211, 87, 87);
-}
-button[type="submit"] {
-  background-color: rgb(102, 58, 143);
-  border: none;
-  color: rgb(246, 250, 253);
-  padding: 15px 40px;
-  border-radius: 50px;
-  opacity: 0.8;
-  font-weight: bold;
-}
-button[type="reset"] {
-  background-color: rgb(251, 252, 253);
-  border: none;
-  color: rgb(89, 38, 136);
-  padding: 15px 40px;
-  border-radius: 50px;
-  opacity: 0.8;
-  font-weight: bold;
-}
-th {
-  font-size: smaller;
-}
-input {
-  padding: 0 0 0 2%;
-  width: 90%;
-}
-button:hover {
-  opacity: 1;
-}
 .hobby {
-  text-align: right;
-  padding-top: 150px;
-  max-width: 1900px;
+  text-align: center;
+  padding-top: 125px;
+  max-width: 1500px;
   margin: 0 auto;
+}
+.hobby img {
+  max-width: 100%;
 }
 .hobbyheader h2,
 .hobbyheader p {
   text-align: left;
-  margin-left: 400px;
 
   font-size: 50px;
   margin-top: -450px;
 }
 .hobby h2 {
-  color: rgb(18, 54, 99);
-  margin-left: 460px;
+  color: rgb(255, 255, 255);
+  margin-left: 290px;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -282,33 +281,33 @@ button:hover {
   margin-top: -60px;
   color: rgb(251, 252, 253);
   font-size: 30px;
-  margin-left: 420px;
+  margin-left: 250px;
 }
 .hobbynav ul {
   margin-top: -15px;
 }
 .hobbynav li {
   text-align: left;
-  margin-left: 470px;
+  margin-left: 300px;
   list-style-type: none;
   margin-bottom: 15px;
 }
 .hobbynav a {
   text-decoration: none;
-  color: rgb(29, 28, 28);
+  color: rgb(255, 255, 255);
   font-size: larger;
 }
 .hobbynav a:hover {
-  color: rgb(9, 116, 165);
+  color: rgb(9, 108, 165);
 }
 .hobbynav li::first-letter {
   color: rgb(66, 79, 150);
 }
 .hobbynav + p {
-  color: rgb(196, 139, 129);
+  color: rgb(255, 255, 255);
   font-size: 15px;
-  margin-top: 25px;
-  margin-left: 461px;
+  margin-top: 50px;
+  margin-left: 291px;
 }
 .PHOTO {
   margin-left: 300px;
@@ -319,30 +318,27 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(18, 54, 99);
 }
-img[alt="domomonside"] {
-  max-width: 500px;
-  padding: 100px 200px;
-  padding-bottom: 100px;
-  padding-right: 800px;
-  background-color: rgba(112, 140, 160, 0.493);
-  margin-top: 400px;
-}
 
-img[alt="cameraphoto"] {
-  max-width: 300px;
-  margin-left: 850px;
+img[alt="camera"] {
+  margin-top: 350px;
   margin-bottom: -435px;
 }
-img[alt="darkdomomon"] {
-  max-width: 300px;
-  margin-left: 1100px;
-  margin-bottom: -610px;
+.mainhobbyphoto {
+  max-width: 100%;
+}
+.mainhobbyphoto P {
+  font-size: larger;
+  text-align: left;
+  margin-left: 1250px;
 }
 .subhobbyphoto {
-  max-width: 1061px;
+  max-width: 1050px;
   margin: 200px auto;
   margin-top: 800px;
-  float: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 .subhobbyphoto img {
   margin-left: 25px;
@@ -350,50 +346,7 @@ img[alt="darkdomomon"] {
   margin-top: 50px;
   max-width: 300px;
 }
-.hobbyphoto {
-  overflow: hidden;
-}
-.hobbyillust {
-  text-align: right;
-}
-.ILLUST {
-  clear: both;
-  font-size: 40px;
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(18, 54, 99);
-  margin-right: 250px;
-  margin-top: -730px;
-}
-img[alt="chihuyu"] {
-  max-width: 500px;
 
-  padding: 100px 200px;
-  padding-left: 800px;
-  padding-bottom: 100px;
-  background-color: rgba(129, 155, 156, 0.493);
-}
-img[alt="izam"] {
-  max-width: 300px;
-  margin-top: 40px;
-  margin-right: 800px;
-}
-img[alt="nunnta"] {
-  max-width: 300px;
-  margin-top: -110px;
-  margin-right: 1050px;
-}
-.subhobbyillust {
-  max-width: 1061px;
-  margin: 200px auto;
-  float: center;
-}
-.subhobbyillust img {
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 50px;
-  max-width: 300px;
-}
 .hobbyall {
   max-width: 1900px;
   margin: 0 auto;
