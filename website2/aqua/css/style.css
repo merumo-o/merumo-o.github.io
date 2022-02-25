@@ -1,0 +1,156 @@
+body {
+  text-align: center;
+  background-color: #49487a;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 2000px;
+  margin-top: 200px;
+  color: aliceblue;
+  font-size: 25px;
+}
+.header1 {
+  width: 2000px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: fixed;
+  top: 0;
+}
+.rogo {
+  margin-top: 40px;
+}
+.rogo1 {
+  float: left;
+}
+.rogo1 img {
+  max-width: 300px;
+  margin-top: 10px;
+  margin-left: -150px;
+  margin-right: -500px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-top: -15px;
+  margin-left: -150px;
+  width: 30px;
+}
+
+#search1 {
+  float: right;
+  margin-right: 100px;
+  margin-top: -80px;
+}
+
+div > p {
+  font-size: 20px;
+  color: rgb(50, 50, 114);
+  margin-top: 20px;
+  margin-left: 2px;
+  font-weight: 900;
+}
+
+.rogo a {
+  text-decoration: none;
+  color: rgb(50, 50, 114);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.rogo li {
+  display: inline-block;
+  margin-left: 20px;
+  color: rgb(50, 50, 114);
+}
+
+.rogo nav {
+  margin-left: -150px;
+}
+.footerdesign {
+  /* margin: 25px 50px 25px 50px; */
+  padding: 100px 0 50px 30%;
+}
+
+.footericon1 {
+  display: flex;
+  text-align: center;
+  margin-left: 200px;
+}
+
+.footericon {
+  width: 75px;
+  padding: 0 30px 0 30px;
+}
+
+.footertext1 {
+  color: white;
+  padding: 45px 0 0 25px;
+  font-weight: lighter;
+  font-size: smaller;
+  margin-left: -550px;
+}
+
+img[alt="ei"] {
+  position: relative;
+  top: -445px;
+  left: 50px;
+}
+img[alt="azarashi"] {
+  position: relative;
+  top: -435px;
+  left: 155px;
+}
+img[alt="fish"] {
+  position: relative;
+  top: -485px;
+  left: 0px;
+}
+img[alt="iruka"] {
+  position: relative;
+  top: -540px;
+  left: 135px;
+}
+img[alt="kurage"] {
+  position: relative;
+  top: -900px;
+  left: -300px;
+}
+img[alt="pennguin"] {
+  position: relative;
+  top: -835px;
+  left: -220px;
+}
+.MMsea {
+  margin-top: -10px;
+}
+.jellyfish {
+  margin-top: -10px;
+}
+
+.penguin {
+  margin-top: -10px;
+}
+.creatures {
+  margin-top: -10px;
+}
+.seal {
+  margin-top: -10px;
+}
+.dolphin {
+  margin-top: -10px;
+}
+
+.icon {
+  min-width: 1075px;
+}
+img[alt="icon"] {
+  position: fixed;
+  bottom: 100px;
+  right: 250px;
+  max-width: 80px;
+}
+a:hover {
+  opacity: 0.5;
+}
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
