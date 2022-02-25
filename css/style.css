@@ -261,6 +261,9 @@ hr {
   max-width: 1500px;
   margin: 0 auto;
 }
+.hobby img {
+  max-width: 1400px;
+}
 .hobbyheader h2,
 .hobbyheader p {
   text-align: left;
@@ -320,8 +323,8 @@ img[alt="camera"] {
   margin-top: 350px;
   margin-bottom: -435px;
 }
-.mainhobbyphoto {
-  max-width: 1500px;
+.mainhobbyphoto img {
+  max-width: 1200px;
 }
 .mainhobbyphoto P {
   font-size: larger;
