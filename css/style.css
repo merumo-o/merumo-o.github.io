@@ -263,7 +263,6 @@ hr {
 }
 .hobby img {
   max-width: 100%;
-  width: 1500px;
 }
 .hobbyheader h2,
 .hobbyheader p {
@@ -326,7 +325,6 @@ img[alt="camera"] {
 }
 .mainhobbyphoto img {
   max-width: 100%;
-  width: 1200px;
 }
 .mainhobbyphoto P {
   font-size: larger;
