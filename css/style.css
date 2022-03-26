@@ -59,9 +59,9 @@ body {
     transform: translate(0, 0) rotate(-7deg);
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
   body {
-    width: 780px;
+    width: 100%;
   }
   .fuwafuwa {
     animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
@@ -70,7 +70,7 @@ body {
     transition: 1.5s ease-in-out;
     width: 225px;
     height: 225px;
-    top: 600px;
+    top: 700px;
     left: -15px;
     position: fixed;
 
@@ -87,8 +87,8 @@ body {
     transition: 1.5s ease-in-out;
     width: 200px;
     height: 200px;
-    top: 600px;
-    left: 425px;
+    top: 700px;
+    left: 500px;
     position: fixed;
 
     display: flex;
