@@ -11,9 +11,13 @@ body {
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  margin-top: -125px;
-  margin-left: 250px;
+  top: -125px;
+  left: 250px;
   position: fixed;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 
@@ -35,9 +39,12 @@ body {
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  margin-top: -125px;
-  margin-left: 1250px;
+  top: -125px;
+  left: 1250px;
   position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 
