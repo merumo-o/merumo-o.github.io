@@ -4,10 +4,58 @@ body {
   box-sizing: border-box;
   color: rgb(63, 63, 73);
 }
+.fuwafuwa {
+  animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
+  background: url("/image/tora.png") no-repeat center center / 200px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 300px;
+  height: 300px;
+  margin-top: -125px;
+  margin-left: 250px;
+  position: fixed;
+  text-align: center;
+}
 
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+.fuwafuwa2 {
+  animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
+  background: url("/image/pien.png") no-repeat center center / 200px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 300px;
+  height: 300px;
+  margin-top: -125px;
+  margin-left: 1250px;
+  position: fixed;
+  text-align: center;
+}
+
+@keyframes fuwafuwa2 {
+  0% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+  50% {
+    transform: translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+}
 .all a {
   text-decoration: none;
   color: rgb(94, 80, 145);
+  transition: 0.5s;
 }
 .all li {
   display: inline-block;
@@ -38,9 +86,11 @@ body {
 .all li a:hover {
   background-color: rgb(229, 236, 243);
   padding: 5px 15px;
+  width: 340px;
 }
 .all a:hover img {
   opacity: 0.6;
+  transition: 0.5s;
 }
 ul img {
   width: 30px;
@@ -54,6 +104,16 @@ img[alt="twitter"] {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+
+  animation: anime1 2s ease; /* アニメーション指定 */
+}
+@keyframes anime1 {
+  0% {
+    opacity: 0; /* 透明度指定 */
+  }
+  100% {
+    opacity: 1; /* 透明度指定 */
+  }
 }
 .topheader {
   text-align: center;
@@ -63,8 +123,25 @@ img[alt="twitter"] {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 5px;
-  color: rgb(120, 123, 180);
+  color: rgb(43, 68, 182);
   font-size: 25px;
+
+  position: relative;
+  animation: anime2 2s ease; /* アニメーション指定 */
+}
+@keyframes anime2 {
+  0% {
+    opacity: 0; /* 透明度指定 */
+    top: 25px;
+  }
+  100% {
+    opacity: 1; /* 透明度指定 */
+    top: 0;
+  }
+}
+.topheader {
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 header p {
   margin-top: -50px;
@@ -72,7 +149,7 @@ header p {
 }
 
 .schoolwork {
-  margin-top: 300px;
+  margin-top: 400px;
   text-align: center;
 }
 .schoolwork video {
@@ -100,7 +177,7 @@ header p {
   color: rgb(64, 10, 114);
 }
 .works h3 {
-  margin-top: 150px;
+  margin-top: 250px;
   font-size: 30px;
   margin-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -117,9 +194,17 @@ header p {
   margin-left: 10px;
   margin-right: 10px;
 }
+.worksimages a {
+  transition: 0.5s;
+}
 .worksimages a:hover {
   opacity: 0.6;
 }
+.worksimages a:hover img {
+  transition: 0.5s;
+  width: 525px;
+}
+
 .worksimages strong {
   font-size: 20px;
 }
@@ -183,6 +268,7 @@ header p {
   margin-top: 50px;
 }
 .twitter a:hover {
+  transition: 0.5s;
   opacity: 0.6;
 }
 
@@ -191,12 +277,16 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-bottom: -25px;
+}
+.twitter img {
+  margin: 25px;
 }
 .twitter p {
   text-align: center;
-  margin-left: 40px;
-  margin-top: 5px;
+  margin-left: 0px;
+  margin-top: 0px;
   font-size: small;
 }
 footer {
