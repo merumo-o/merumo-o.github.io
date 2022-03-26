@@ -65,13 +65,13 @@ body {
   }
   .fuwafuwa {
     animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/tora.png") no-repeat center center / 145px auto;
+    background: url("/image/tora.png") no-repeat center center / 120px auto;
 
     transition: 1.5s ease-in-out;
-    width: 250px;
-    height: 250px;
-    top: 500px;
-    left: 5px;
+    width: 225px;
+    height: 225px;
+    top: 600px;
+    left: -15px;
     position: fixed;
 
     display: flex;
@@ -82,13 +82,13 @@ body {
 
   .fuwafuwa2 {
     animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/pien.png") no-repeat center center / 150px auto;
+    background: url("/image/pien.png") no-repeat center center / 125px auto;
 
     transition: 1.5s ease-in-out;
-    width: 250px;
-    height: 250px;
-    top: 500px;
-    left: 425px;
+    width: 200px;
+    height: 200px;
+    top: 600px;
+    left: 375px;
     position: fixed;
 
     display: flex;
