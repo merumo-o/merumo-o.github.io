@@ -60,6 +60,9 @@ body {
   }
 }
 @media screen and (max-width: 680px) {
+  body {
+    min-width: 580px;
+  }
   .fuwafuwa {
     animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
     background: url("/image/tora.png") no-repeat center center / 145px auto;
