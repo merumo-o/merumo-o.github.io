@@ -60,6 +60,12 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
+  .all li {
+    margin-left: -30px;
+  }
+  .all ul {
+    margin-left: -30px;
+  }
   .fuwafuwa {
     animation: fuwafuwa2 2.5s infinite ease-in-out 0.8s alternate;
     background: url("/image/tora.png") no-repeat center center / 100px auto;
@@ -67,7 +73,7 @@ body {
     transition: 1.5s ease-in-out;
     width: 200px;
     height: 200px;
-    top: 700px;
+    top: 350px;
     left: 5px;
     position: fixed;
     display: flex;
@@ -83,7 +89,7 @@ body {
     transition: 1.5s ease-in-out;
     width: 200px;
     height: 200px;
-    top: 700px;
+    top: 350px;
     left: 250px;
     position: fixed;
     display: flex;
