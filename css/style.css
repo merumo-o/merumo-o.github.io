@@ -61,7 +61,7 @@ body {
 }
 @media screen and (max-width: 680px) {
   body {
-    width: 100%;
+    width: 680px;
   }
   .fuwafuwa {
     animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
