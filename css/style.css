@@ -7,11 +7,11 @@ body {
 .fuwafuwa {
   animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
   background: url("/image/tora.png") no-repeat center center / 200px auto;
-  display: inline-block;
+
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  top: 675px;
+  top: 700px;
   left: 250px;
   position: fixed;
 
@@ -35,11 +35,11 @@ body {
 .fuwafuwa2 {
   animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
   background: url("/image/pien.png") no-repeat center center / 200px auto;
-  display: inline-block;
+
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  top: 675px;
+  top: 700px;
   left: 1250px;
   position: fixed;
   display: flex;
@@ -57,45 +57,6 @@ body {
   }
   100% {
     transform: translate(0, 0) rotate(-7deg);
-  }
-}
-@media screen and (max-width: 480px) {
-  .all li {
-    margin-left: -30px;
-  }
-  .all ul {
-    margin-left: -30px;
-  }
-  .fuwafuwa {
-    animation: fuwafuwa2 2.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/tora.png") no-repeat center center / 100px auto;
-    display: inline-block;
-    transition: 1.5s ease-in-out;
-    width: 200px;
-    height: 200px;
-    top: 350px;
-    left: 5px;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .fuwafuwa2 {
-    animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/pien.png") no-repeat center center / 100px auto;
-    display: inline-block;
-    transition: 1.5s ease-in-out;
-    width: 200px;
-    height: 200px;
-    top: 350px;
-    left: 250px;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 }
 
