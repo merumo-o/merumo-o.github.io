@@ -352,11 +352,20 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
   color: rgb(64, 10, 114);
+  display: block; /* ブロック要素にする */
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
 }
 .PROFILE img[alt="icon"] {
   margin-top: 30px;
   width: 250px;
   margin-bottom: -20px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 .PROFILE img[alt="sns"] {
   max-width: 25px;
@@ -373,19 +382,63 @@ footer {
 .name {
   margin-top: 35px;
   color: rgb(37, 76, 150);
+  display: block; /* ブロック要素にする */
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
+}
+.student {
+  display: block; /* ブロック要素にする */
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 2.8s;
+  animation-fill-mode: backwards;
 }
 .profilewrite p {
   margin-top: -25px;
   font-weight: bold;
   font-size: 15px;
 }
+.content {
+  display: block; /* ブロック要素にする */
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+.profilewrite a {
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.2s;
+  animation-fill-mode: backwards;
+}
+@keyframes anime3 {
+  0% {
+    opacity: 0; /* 透明度指定 */
+    top: 30px; /* 位置指定 */
+  }
+  100% {
+    opacity: 1; /* 透明度指定 */
+    top: 0; /* 位置指定 */
+  }
+}
+
 .content p {
   margin-top: 15px;
   font-weight: normal;
 }
+.profilewrite a img {
+  transition: 0.5s;
+}
 .profilewrite a:hover img {
+  transition: 0.5s;
   opacity: 0.6;
 }
+
 hr {
   margin-top: 70px;
   border-top: dashed 1px;
