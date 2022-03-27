@@ -508,9 +508,8 @@ hr {
   border-radius: 50%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
   opacity: 0.95;
-
+  top: 800px;
   left: 200px;
-  margin-top: -25px;
 }
 .button a:after {
   content: "";
@@ -558,6 +557,11 @@ hr {
 
 .hobby img {
   max-width: 100%;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 .hobbyheader h2,
 .hobbyheader p {
@@ -571,12 +575,22 @@ hr {
   margin-left: 230px;
   font-weight: lighter;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 .hobby p {
   margin-top: -60px;
   color: rgb(251, 252, 253);
   font-size: 30px;
   margin-left: 190px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 1.9s;
+  animation-fill-mode: backwards;
 }
 .hobbynav ul {
   margin-top: -15px;
@@ -586,6 +600,11 @@ hr {
   margin-left: 240px;
   list-style-type: none;
   margin-bottom: 15px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 1.7s;
+  animation-fill-mode: backwards;
 }
 .hobbynav a {
   text-decoration: none;
@@ -598,9 +617,7 @@ hr {
   color: #fff;
   text-decoration: none;
 }
-.hobbynav a:hover {
-  color: rgb(9, 108, 165);
-}
+
 .hobbynav a:after {
   position: absolute;
   bottom: 0;
@@ -641,15 +658,16 @@ img[alt="camera"] {
 .mainhobbyphoto img {
   text-align: center;
   max-width: 100%;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
 }
 .mainhobbyphoto {
   text-align: center;
 }
-.mainhobbyphoto P {
-  font-size: larger;
-  text-align: left;
-  margin-left: 1250px;
-}
+
 .subhobbyphoto {
   max-width: 1050px;
   margin: 200px auto;
@@ -659,6 +677,11 @@ img[alt="camera"] {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 2.7s;
+  animation-fill-mode: backwards;
 }
 .subhobbyphoto img {
   margin-left: 25px;
@@ -681,6 +704,11 @@ img[alt="camera"] {
     "Lucida Sans", Arial, sans-serif;
   color: rgb(255, 255, 255);
   margin-top: 200px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
 }
 .anotherhobby {
   background: rgba(141, 186, 207, 0.6);
@@ -710,6 +738,11 @@ img[alt="camera"] {
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.2s;
+  animation-fill-mode: backwards;
 }
 .anotherhobby2 video,
 .anotherhobby2 img {
@@ -727,21 +760,41 @@ img[alt="camera"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.4s;
+  animation-fill-mode: backwards;
 }
 .anotherhobby3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
 }
 .anotherhobby4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.9s;
+  animation-fill-mode: backwards;
 }
 .another h3 {
   margin-top: 200px;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 3.7s;
+  animation-fill-mode: backwards;
 }
 .anotherhobby4 img {
   max-width: 300px;
@@ -767,6 +820,11 @@ img[alt="camera"] {
 .lastmessege {
   margin-top: 100px;
   text-align: center;
+
+  position: relative; /* 位置指定 */
+  animation: anime3 1s ease; /* アニメーション指定 */
+  animation-delay: 4s;
+  animation-fill-mode: backwards;
 }
 .lastmessege {
   color: dimgray;
