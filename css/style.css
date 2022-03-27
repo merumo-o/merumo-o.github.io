@@ -174,6 +174,8 @@ img[alt="twitter"] {
 
   position: relative;
   animation: anime2 2s ease; /* アニメーション指定 */
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 @keyframes anime2 {
   0% {
@@ -185,10 +187,7 @@ img[alt="twitter"] {
     top: 0;
   }
 }
-.topheader {
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
-}
+
 header p {
   margin-top: -50px;
   color: rgb(143, 187, 207);
@@ -197,6 +196,11 @@ header p {
 .schoolwork {
   margin-top: 400px;
   text-align: center;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 .schoolwork video {
   max-width: 800px;
@@ -228,6 +232,11 @@ header p {
   margin-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
 }
 .worksimages1 {
   text-align: center;
@@ -235,6 +244,11 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 3.7s;
+  animation-fill-mode: backwards;
 }
 .worksimages img {
   margin-left: 10px;
@@ -264,6 +278,11 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 4.1s;
+  animation-fill-mode: backwards;
 }
 .worksimages3 {
   text-align: center;
@@ -278,6 +297,11 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 3.9s;
+  animation-fill-mode: backwards;
 }
 .worksimages4 {
   text-align: center;
@@ -285,12 +309,21 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 150px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
 }
 .worksimages6 {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2.6s;
+  animation-fill-mode: backwards;
 }
 .worksimages7 {
   text-align: center;
@@ -298,6 +331,10 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2.7s;
+  animation-fill-mode: backwards;
 }
 .worksimages8 {
   text-align: center;
@@ -305,6 +342,10 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2.8s;
+  animation-fill-mode: backwards;
 }
 .worksimages9 {
   text-align: center;
@@ -312,6 +353,10 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2.9s;
+  animation-fill-mode: backwards;
 }
 .twitter a:hover {
   transition: 0.5s;
@@ -325,6 +370,11 @@ header p {
   justify-content: center;
   margin-top: 300px;
   margin-bottom: -25px;
+
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 4.5s;
+  animation-fill-mode: backwards;
 }
 .twitter img {
   margin: 25px;
@@ -444,12 +494,68 @@ hr {
   border-top: dashed 1px;
 }
 
+.button a {
+  box-sizing: border-box;
+  display: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  width: 85px;
+  height: 85px;
+  border: solid 6px rgb(117, 164, 218);
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  opacity: 0.95;
+
+  left: 200px;
+  top: 800px;
+}
+.button a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: rgb(117, 164, 218);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+  transition: transform ease 0.4s;
+}
+
+.button a:hover:after {
+  transform: translate(-50%, -50%) scale(1.1, 1.1);
+}
+
+.button a:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 55%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-color: rgb(117, 164, 218);
+  border-width: 6px 0 0 6px;
+
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: border-color ease 0.1s;
+}
+
+.button a:hover:before {
+  border-color: #fff;
+}
 .hobby {
   text-align: center;
   padding-top: 125px;
   max-width: 1500px;
   margin: 0 auto;
 }
+
 .hobby img {
   max-width: 100%;
 }
@@ -485,9 +591,30 @@ hr {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: larger;
+
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
 }
 .hobbynav a:hover {
   color: rgb(9, 108, 165);
+}
+.hobbynav a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+
+.hobbynav a:hover:after {
+  transform: translate(0, 0);
 }
 .hobbynav li::first-letter {
   color: rgb(66, 79, 150);
