@@ -508,7 +508,7 @@ hr {
   border-radius: 50%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
   opacity: 0.95;
-  top: 800px;
+  bottom: 100px;
   left: 200px;
 }
 .button a:after {
