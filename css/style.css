@@ -2,108 +2,14 @@ body {
   margin: 0 auto;
   background-color: rgb(229, 236, 243);
   box-sizing: border-box;
-  color: rgb(63, 63, 73);
-}
-.fuwafuwa {
-  animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
-  background: url("/image/tora.png") no-repeat center center / 200px auto;
-
-  transition: 1.5s ease-in-out;
-  width: 300px;
-  height: 300px;
-  top: 700px;
-  left: 250px;
-  position: fixed;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  color: rgb(42, 42, 48);
 }
 
-@keyframes fuwafuwa {
-  0% {
-    transform: translate(0, 0) rotate(-7deg);
-  }
-  50% {
-    transform: translate(0, -7px) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(7deg);
-  }
-}
-.fuwafuwa2 {
-  animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-  background: url("/image/pien.png") no-repeat center center / 200px auto;
-
-  transition: 1.5s ease-in-out;
-  width: 300px;
-  height: 300px;
-  top: 700px;
-  left: 1250px;
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-@keyframes fuwafuwa2 {
-  0% {
-    transform: translate(0, 0) rotate(7deg);
-  }
-  50% {
-    transform: translate(0, -7px) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(-7deg);
-  }
-}
-@media screen and (max-width: 680px) {
-  body {
-    width: 680px;
-    margin: 0 auto;
-  }
-  .fuwafuwa {
-    animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/tora.png") no-repeat center center / 120px auto;
-
-    transition: 1.5s ease-in-out;
-    width: 225px;
-    height: 225px;
-    top: 800px;
-    left: -15px;
-    position: fixed;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .fuwafuwa2 {
-    animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/pien.png") no-repeat center center / 125px auto;
-
-    transition: 1.5s ease-in-out;
-    width: 200px;
-    height: 200px;
-    top: 800px;
-    left: 475px;
-    position: fixed;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
-.all a {
+nav a {
   text-decoration: none;
   color: rgb(94, 80, 145);
-  transition: 0.5s;
 }
-.all li {
+nav li {
   display: inline-block;
   width: 110px;
   text-align: center;
@@ -111,7 +17,7 @@ body {
   font-size: 18px;
   font-family: "Arial Narrow";
 }
-.all ul {
+nav ul {
   text-align: center;
   position: fixed;
 
@@ -121,7 +27,7 @@ body {
   padding-bottom: 15px;
   margin-top: 0px;
 }
-.all {
+nav {
   list-style: none;
 }
 .current-page {
@@ -129,14 +35,12 @@ body {
   padding: 5px 0px;
 }
 
-.all li a:hover {
+nav li a:hover {
   background-color: rgb(229, 236, 243);
   padding: 5px 15px;
-  width: 340px;
 }
-.all a:hover img {
+nav a:hover img {
   opacity: 0.6;
-  transition: 0.5s;
 }
 ul img {
   width: 30px;
@@ -148,62 +52,27 @@ img[alt="twitter"] {
 }
 .topimage {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  animation: anime1 2s ease; /* アニメーション指定 */
 }
-@keyframes anime1 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-  }
-  100% {
-    opacity: 1; /* 透明度指定 */
-  }
-}
-.topheader {
+header {
   text-align: center;
-
-  margin-top: -500px;
+  background-color: rgba(146, 191, 212, 0.5);
+  margin-top: -400px;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 5px;
-  color: rgb(43, 68, 182);
+  color: rgb(14, 49, 126);
   font-size: 25px;
-
-  position: relative;
-  animation: anime2 2s ease; /* アニメーション指定 */
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
 }
-@keyframes anime2 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-    top: 25px;
-  }
-  100% {
-    opacity: 1; /* 透明度指定 */
-    top: 0;
-  }
-}
-
 header p {
   margin-top: -50px;
-  color: rgb(143, 187, 207);
 }
 
 .schoolwork {
-  margin-top: 400px;
   text-align: center;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2s;
-  animation-fill-mode: backwards;
 }
 .schoolwork video {
-  max-width: 800px;
+  max-width: 1000px;
 }
 .schoolwork h3 {
   margin-top: 200px;
@@ -218,53 +87,30 @@ header p {
   max-width: 1000px;
   margin-top: 100px;
 }
-.schoolwork p {
-  font-size: 20px;
-  margin-top: 10px;
-}
 .works {
   text-align: center;
   color: rgb(64, 10, 114);
 }
 .works h3 {
-  margin-top: 250px;
+  margin-top: 100px;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 2px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
 }
 .worksimages1 {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.7s;
-  animation-fill-mode: backwards;
 }
 .worksimages img {
   margin-left: 10px;
   margin-right: 10px;
 }
-.worksimages a {
-  transition: 0.5s;
-}
 .worksimages a:hover {
   opacity: 0.6;
 }
-.worksimages a:hover img {
-  transition: 0.5s;
-  width: 525px;
-}
-
 .worksimages strong {
   font-size: 20px;
 }
@@ -278,11 +124,6 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 4.1s;
-  animation-fill-mode: backwards;
 }
 .worksimages3 {
   text-align: center;
@@ -290,100 +131,6 @@ header p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
-}
-.worksimages5 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.9s;
-  animation-fill-mode: backwards;
-}
-.worksimages4 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 150px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.5s;
-  animation-fill-mode: backwards;
-}
-.worksimages6 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.6s;
-  animation-fill-mode: backwards;
-}
-.worksimages7 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.7s;
-  animation-fill-mode: backwards;
-}
-.worksimages8 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.8s;
-  animation-fill-mode: backwards;
-}
-.worksimages9 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.9s;
-  animation-fill-mode: backwards;
-}
-.twitter a:hover {
-  transition: 0.5s;
-  opacity: 0.6;
-}
-
-.twitter {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 300px;
-  margin-bottom: -25px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 4.5s;
-  animation-fill-mode: backwards;
-}
-.twitter img {
-  margin: 25px;
-}
-.twitter p {
-  text-align: center;
-  margin-left: 0px;
-  margin-top: 0px;
-  font-size: small;
 }
 footer {
   text-align: center;
@@ -402,20 +149,11 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 5px;
   color: rgb(64, 10, 114);
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
 }
 .PROFILE img[alt="icon"] {
   margin-top: 30px;
   width: 250px;
   margin-bottom: -20px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
 }
 .PROFILE img[alt="sns"] {
   max-width: 25px;
@@ -432,401 +170,39 @@ footer {
 .name {
   margin-top: 35px;
   color: rgb(37, 76, 150);
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
-}
-.student {
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.8s;
-  animation-fill-mode: backwards;
 }
 .profilewrite p {
   margin-top: -25px;
   font-weight: bold;
   font-size: 15px;
 }
-.content {
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
-}
-.profilewrite a {
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.2s;
-  animation-fill-mode: backwards;
-}
-@keyframes anime3 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-    top: 30px; /* 位置指定 */
-  }
-  100% {
-    opacity: 1; /* 透明度指定 */
-    top: 0; /* 位置指定 */
-  }
-}
-
 .content p {
   margin-top: 15px;
   font-weight: normal;
 }
-.profilewrite a img {
-  transition: 0.5s;
-}
 .profilewrite a:hover img {
-  transition: 0.5s;
   opacity: 0.6;
 }
-
 hr {
   margin-top: 70px;
   border-top: dashed 1px;
 }
-
-.button a {
-  box-sizing: border-box;
-  display: absolute;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  border: solid 6px rgb(117, 164, 218);
-  border-radius: 50%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
-  opacity: 0.95;
-  bottom: 100px;
-  left: 200px;
-}
-.button a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(117, 164, 218);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0, 0);
-  transition: transform ease 0.4s;
-}
-
-.button a:hover:after {
-  transform: translate(-50%, -50%) scale(1.1, 1.1);
-}
-
-.button a:before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  top: 55%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-style: solid;
-  border-color: rgb(117, 164, 218);
-  border-width: 6px 0 0 6px;
-
-  transform: translate(-50%, -50%) rotate(45deg);
-  transition: border-color ease 0.1s;
-}
-
-.button a:hover:before {
-  border-color: #fff;
-}
-.hobby {
-  text-align: center;
-  padding-top: 125px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.hobby img {
-  max-width: 100%;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-}
-.hobbyheader h2,
-.hobbyheader p {
-  text-align: left;
-
-  font-size: 50px;
-  margin-top: -450px;
-}
-.hobby h2 {
-  color: rgb(255, 255, 255);
-  margin-left: 230px;
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
-}
-.hobby p {
-  margin-top: -60px;
-  color: rgb(251, 252, 253);
-  font-size: 30px;
-  margin-left: 190px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.9s;
-  animation-fill-mode: backwards;
-}
-.hobbynav ul {
-  margin-top: -15px;
-}
-.hobbynav li {
-  text-align: left;
-  margin-left: 240px;
-  list-style-type: none;
-  margin-bottom: 15px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-}
-.hobbynav a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: larger;
-
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hobbynav a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  transform: translate(-100%, 0);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
-  content: "";
-}
-
-.hobbynav a:hover:after {
-  transform: translate(0, 0);
-}
-.hobbynav li::first-letter {
-  color: rgb(66, 79, 150);
-}
-.hobbynav + p {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 230px;
-}
-.PHOTO {
-  margin-left: 300px;
-  margin-top: -730px;
-  margin-bottom: -70px;
-  font-size: 40px;
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(18, 54, 99);
-}
-
-img[alt="camera"] {
-  margin-top: 350px;
-}
-.mainhobbyphoto img {
-  text-align: center;
-  max-width: 100%;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
-}
-.mainhobbyphoto {
-  text-align: center;
-}
-
-.subhobbyphoto {
-  max-width: 1050px;
-  margin: 200px auto;
-  margin-top: 250px;
-  margin-bottom: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.7s;
-  animation-fill-mode: backwards;
-}
-.subhobbyphoto img {
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 50px;
-  max-width: 300px;
-}
-.subhobbyphoto a:hover {
-  opacity: 0.6;
-}
-.hobbyall {
-  max-width: 1900px;
-  margin: 0 auto;
-}
-.another h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  margin-top: 200px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby {
-  background: rgba(141, 186, 207, 0.6);
-  padding: 100px;
-  color: aliceblue;
-  margin-top: -55px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 20px;
-}
-.anotherhobby a:hover {
-  opacity: 0.6;
-}
-.anotherhobby1 img,
-.anotherhobby1 video {
-  max-width: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.anotherhobby figcaption {
-  margin-top: -10px;
-}
-.anotherhobby1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.2s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby2 video,
-.anotherhobby2 img {
-  max-width: 300px;
-  max-height: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-.anotherhobby3 video,
-.anotherhobby3 img {
-  max-width: 450px;
-  max-height: 450px;
-}
-.anotherhobby2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.4s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.5s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.9s;
-  animation-fill-mode: backwards;
-}
-.another h3 {
-  margin-top: 200px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.7s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby4 img {
-  max-width: 300px;
-}
-.anotherhobby5 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-.anotherhobby5 img {
-  max-width: 500px;
-}
-.anotherhobby5 a:hover {
-  opacity: 0.7;
-}
-.lastmessege img {
-  max-width: 250px;
-  text-align: center;
-  margin-top: -70px;
-  margin-bottom: -50px;
-}
-.lastmessege {
+.CONTACT h2 {
   margin-top: 100px;
   text-align: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 4s;
-  animation-fill-mode: backwards;
+  font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(64, 10, 114);
 }
-.lastmessege {
-  color: dimgray;
-  font-size: 25px;
+input {
+  border: none;
+}
+textarea {
+  border: none;
+}
+table {
+  border: solid rgb(64, 10, 114) 2px;
+
+  margin: 0 auto;
 }
