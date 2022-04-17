@@ -11,7 +11,7 @@ body {
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  top: 700px;
+  bottom: 5px;
   left: 250px;
   position: fixed;
 
@@ -39,7 +39,7 @@ body {
   transition: 1.5s ease-in-out;
   width: 300px;
   height: 300px;
-  top: 700px;
+  bottom: 5px;
   left: 1250px;
   position: fixed;
   display: flex;
@@ -71,7 +71,7 @@ body {
     transition: 1.5s ease-in-out;
     width: 225px;
     height: 225px;
-    top: 800px;
+    bottom: 5px;
     left: -15px;
     position: fixed;
 
@@ -88,7 +88,7 @@ body {
     transition: 1.5s ease-in-out;
     width: 200px;
     height: 200px;
-    top: 800px;
+    bottom: 5px;
     left: 475px;
     position: fixed;
 
@@ -120,6 +120,8 @@ body {
   padding-top: 30px;
   padding-bottom: 15px;
   margin-top: 0px;
+
+  z-index: 100;
 }
 .all {
   list-style: none;
