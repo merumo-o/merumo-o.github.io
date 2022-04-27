@@ -1,0 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  position: fixed;
+}
+body {
+  background-color: #f4f4f5;
+  height: 2000px;
+  margin: 0 auto;
+}
+.logo {
+  position: fixed;
+  top: 15px;
+  left: 5px;
+}
+.merumo {
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  top: 15px;
+  left: 100px;
+  position: fixed;
+}
+
+/* ここから下がハンバーガーメニューに関するCSS */
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+
+  right: 40px;
+  z-index: 100; /* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40px;
+
+  border-radius: 2px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 14px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 14px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background-color: rgb(129, 201, 243);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: rgb(129, 201, 243);
+}
+
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: rgb(121, 122, 122);
+  transition: 0.5s;
+
+  padding-top: 20px;
+}
+.nav_content img {
+  max-width: 100%;
+
+  position: absolute;
+  bottom: 0px;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+  margin-top: 90px;
+}
+
+.nav_item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 30px;
+  font-family: ab-andante, sans-serif;
+}
+.current-page a {
+  color: rgb(129, 201, 243);
+  text-decoration: none;
+  font-size: 30px;
+  font-family: ab-andante, sans-serif;
+}
+
+.nav_list li {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0; /* メニューを画面に入れる */
+}
+
+.taitleimg {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.work h1 {
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+.work {
+  text-align: center;
+  margin-top: 350px;
+  margin-bottom: -150px;
+  max-width: 400px;
+}
+.white img,
+.black img {
+  max-width: 225px;
+  border-radius: 0.2cm;
+  margin-top: 25px;
+  max-height: 150px;
+}
+.white {
+  background-color: white;
+  width: 300px;
+  margin: 0 auto;
+  /* padding-top: 25px;
+  padding-bottom: 75px; */
+
+  height: 290px;
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 10px -1px rgb(205, 207, 211);
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.black {
+  background-color: #3e4b5a;
+  color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  height: 290px;
+
+  /* padding-top: 25px;
+  padding-bottom: 75px; */
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.another img {
+  width: 150px;
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+.icon img {
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.icon {
+  margin-top: 300px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sikaku img {
+  width: 100px;
+}
+footer p {
+  color: #fff;
+}
+footer {
+  background-color: #1f569e;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .nav_list {
+    display: flex;
+    justify-content: right;
+    height: 75px;
+    margin-top: 0px;
+    align-items: center;
+    right: 125px;
+    top: 10px;
+
+    width: 100%;
+    /* margin-left: 400px; */
+  }
+  ul {
+    position: fixed;
+  }
+  .nav_list li {
+    margin-left: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: ab-andante, sans-serif;
+  }
+  .nav_item a {
+    color: #333;
+  }
+  .drawer_open {
+    display: none;
+  }
+  .current-page a {
+    color: rgba(62, 64, 66, 0.473);
+  }
+  .nav_content {
+    position: relative;
+  }
+  .nav_content img {
+    display: none;
+  }
+  .taitleimg img {
+    max-width: 500px;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .work h1 {
+    font-family: ab-andante, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .white img,
+  .black img {
+    max-width: 275px;
+    border-radius: 0.2cm;
+    margin-top: 25px;
+    max-height: 200px;
+  }
+  .white {
+    background-color: white;
+    width: 350px;
+    margin: 0 auto;
+    /* padding-top: 25px;
+    padding-bottom: 75px; */
+
+    height: 340px;
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 10px -1px rgb(205, 207, 211);
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .black {
+    background-color: #3e4b5a;
+    color: #fff;
+    width: 350px;
+    margin: 0 auto;
+    height: 340px;
+
+    /* padding-top: 25px;
+    padding-bottom: 75px; */
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .work {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 350px;
+    max-width: 1600px;
+  }
+  .flex div {
+    margin-left: 75px;
+  }
+  .another img {
+    width: 350px;
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .sikaku img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .taitleimg img {
+    max-width: 450px;
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .taitleimg img {
+    max-width: 300px;
+    margin-top: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .taitleimg img {
+    max-width: 275px;
+    margin-top: 175px;
+  }
+}
