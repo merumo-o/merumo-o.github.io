@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "bit3lzi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
     <meta charset="UTF-8" />
- 
-    <title>ARTWORK/merumo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WORK/merumo</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css"
@@ -17,219 +48,98 @@
   </head>
 
   <body>
-    <nav class="all">
-      <ul>
-        <li class="current-page"><a href="#TOP">WORK</a></li>
-        <li><a href="./profile.html">PROFILE</a></li>
+    <header class="header">
+      <!-- ヘッダーロゴ -->
+      <div class="logo">
+        <img src="./image/kuroneko.png" alt="" />
+      </div>
+      <div class="merumo">
+        <p>メルモ</p>
+      </div>
 
-        <li><a href="./hobby.html">HOBBY</a></li>
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox" />
 
-        <a href="https://twitter.com/Mee_6o"
-          ><img src="./image/twitter.png" alt="twitter"
-        /></a>
-        <a href="https://www.instagram.com/meruo_o/">
-          <img src="./image/instagram.png" alt="instagram" />
-        </a>
-      </ul>
-    </nav>
-    <div class="topimage">
-      <img src="./image/topimage.png" alt="topimage" id="TOP" />
-    </div>
-    <header class="topheader">
-      <h1>Portfolio</h1>
-      <p>-merumo-</p>
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="current-page"><a href="./index.html">トップ</a></li>
+            <li class="nav_item"><a href="">プロフィール</a></li>
+          </ul>
+
+          <img src="./image/hito1.png" alt="" />
+        </nav>
+      </div>
     </header>
     <main>
-      <section>
-        <div class="schoolwork">
-          <h3>latest work</h3>
-          <a href="https://youtu.be/GIsGz9eZoMk"
-                ><img src="./image/movieup.png" alt="" width="800"
-              /></a>
-          <p>
-            <strong>Movie_up/.bubble</strong>
-            <br />.bubbleで作成した簡易的な動画投稿サイトです。
-          </p>
+      <div class="taitleimg">
+        <img src="./image/taitoru.png" alt="" />
+      </div>
+
+      <section class="work">
+        <h1>ワーク</h1>
+        <div class="flex">
+          <div class="white">
+            <img src="./image/movieup.png" alt="" />
+            <p>Move up</p>
+          </div>
+
+          <div class="black">
+            <img src="./image/carsite samune.jpg" alt="" />
+            <p>Move up</p>
+          </div>
+
+          <div class="white">
+            <img src="./image/aquaMM.png" alt="" />
+            <p>Move up</p>
+          </div>
+
+          <div class="black">
+            <img src="./image/dezitarunyumonn.png" alt="" />
+            <p>Move up</p>
+          </div>
+
+          <div class="white">
+            <img src="./image/cafeweb.png" alt="" />
+            <p>Move up</p>
+          </div>
+
+          <div class="black">
+            <img src="./image/kadaidouga.png" alt="" />
+            <p>Move up</p>
+          </div>
         </div>
       </section>
-      <section>
-        <div class="works"><h3>WORKS</h3></div>
-        <div class="worksimages">
-          <div class="worksimages6">
-            <div class="aquaMM">
-              <a href="/website2/aqua/area.html"
-                ><img src="./image/aquaMM.png" alt="" width="500"
-              /></a>
-              <p>webサイト共同制作</p>
-            </div>
-          </div>
+      <section class="work">
+        <h1>アナザー</h1>
+        <div class="another">
+          <img src="./image/awaji.png" alt="" />
+          <img src="./image/yorunokatasumi.png" alt="" />
+          <img src="./image/apexsamune.png" alt="" />
+          <img src="./image/chupuri.png" alt="" />
 
-          <div class="worksimages7">
-            <div class="firstwebsite">
-              <a href="/websaite/index.html"
-                ><img src="./image/cafeweb.png" alt="" width="500"
-              /></a>
-              <p>初めてのwebサイト作成</p>
-            </div>
+          <div class="sikaku">
+            <img src="./image/ofukumochi.jpg" alt="" />
+            <img src="./image/cafe.png" alt="" />
+            <img src="./image/tumikicar1.png" alt="" />
+            <img src="./image/um3.png" alt="" />
+            <img src="./image/onigirikuma.jpeg" alt="" />
+            <img src="./image/suraim.png" alt="" />
           </div>
-          <div class="worksimages8">
-            <div class="firstwebsite">
-              <a href="image/carsite.jpg" data-lightbox="group">
-                <img src="image/carsite samuneー.jpg" alt="" width="500"
-              /></a>
-              <p>webサイトデザイン</p>
-            </div>
-          </div>
-          <div class="worksimages9">
-            <div class="firstwebsite">
-              <a href="image/dezitarunyumonn.png" data-lightbox="group">
-                <img src="image/dezitarunyumonn.png" alt="" width="500"
-              /></a>
-              <p>課題のパッケージデザイン</p>
-            </div>
-          </div>
-          <div class="worksimages4">
-            <div class="yorunokatasumi">
-              <a href="https://youtu.be/fXRKJjgQgwM">
-                <img src="./image/apexsamune.png" alt="WORKS" width="486"
-              /></a>
-              <p>
-                <strong>Apex montage</strong>
-                <br />作成
-              </p>
-            </div>
-            <div class="minecraft">
-              <a href="https://youtu.be/txkh3BCgIHw">
-                <img src="./image/mincraftsamune.png" alt="WORKS" width="486"
-              /></a>
-              <p>
-                <strong>マインクラフト～雪だるまを作ろう～</strong>
-                <br />動画編集
-              </p>
-            </div>
-
-            <div class="kadaidouga">
-              <video
-                src="./video/topvideo.mp4"
-                poster="./image/topvideo's image.png "
-                width="486"
-                controls
-              ></video>
-              <p>
-                <strong>またキミの隣で笑えるように</strong>
-                <br />授業課題として作成しました。
-              </p>
-            </div>
-          </div>
-          <div class="worksimages1">
-            <div class="yorunokatasumi">
-              <a href="https://youtu.be/ypgqhZR0kzo">
-                <img src="./image/yorunokatasumi.png" width="486" alt="WORKS"
-              /></a>
-              <p>
-                <strong>ヨルノカタスミ/kobore Guitar Cover-どももん</strong>
-                <br />撮影・MVお手伝い
-              </p>
-            </div>
-            <div class="awaji">
-              <a href="https://youtu.be/C4OtVILTNPg"
-                ><img src="./image/awaji.png" width="486" alt=""
-              /></a>
-              <p>
-                <strong>おまけ：淡路島vlog</strong> <br />
-                淡路島に行った時の動画です。
-              </p>
-            </div>
-            <div class="syoujyorei">
-              <img src="image/syoujyorei.png" alt="" />
-              <p>
-                <strong>少女レイ/みきとP Cover-???</strong> <br />
-                イラスト
-              </p>
-            </div>
-        
-          </div>
-          <div class="worksimages5">
-            <div class="sinnderera">
-              <a href="https://youtu.be/ZRVT2jVgE14">
-                <img src="./image/sinderera.png" alt="WORKS" width="486"
-              /></a>
-              <p>
-                <strong>シンデレラ/DECO*27 Cover-#00</strong> <br />
-                イラスト
-              </p>
-            </div>
-            <div class="animaru">
-              <img src="./image/animaru.png" alt="WORKS" width="486" />
-              <p>
-                <strong>アニマル/DECO*27 Cover-？？？</strong> <br />
-                イラスト
-              </p>
-            </div>
-            <div class="chupuri">
-              <img src="./image/chupuri.png" alt="WORKS" width="486" />
-              <p>
-                <strong>チュープリ/ZOC Cover-???＆???</strong> <br />
-                イラスト
-              </p>
-            </div>
-          </div>
-
-          <div class="worksimages2">
-            <div class="vampire">
-              <a href="https://youtu.be/biCHusjShhM">
-                <img src="./image/vampire.png" width="486" alt="WORKS"
-              /></a>
-              <p>
-                <strong>ヴァンパイア/DECO*27 Cover-あるなみ</strong> <br />
-                イラスト・一部オリジナルMV
-              </p>
-            </div>
-            <div class="KING">
-              <a href="https://youtu.be/zkLIA0_bic0">
-                <img src="./image/KING.png" width="486" alt=""
-              /></a>
-              <p>
-                <strong>KING/kanaria Cover-あるなみ</strong> <br />
-                イラスト
-              </p>
-            </div>
-
-            <div class="mao">
-              <img src="image/mao.png" alt="" />
-              <p>
-                <strong>マオ/かいりきベア・まふまふ　Cover-???</strong> <br />
-                イラスト
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="twitter">
-          <div class="iconillusut">
-            <a href="https://twitter.com/Mee_6o"
-              ><img
-                src="./image/iconmerumo.png"
-                alt="twitter"
-                width="125px
-            "
-            /></a>
-            <p>イラスト垢</p>
-          </div>
-          <div class="iconanother">
-            <a href="https://twitter.com/meru_ugok"
-              ><img
-                src="./image/kuzira.png"
-                width="125px
-            "
-                alt="twitter"
-            /></a>
-            <p>その他</p>
-     
         </div>
       </section>
+      <div class="icon">
+        <img src="./image/twitter2.png" alt="" />
+        <img src="./image/instagram2 .png" alt="" />
+      </div>
     </main>
     <footer>
-      <p>©meromo</p>
+      <p>©2022 meromo</p>
     </footer>
   </body>
 </html>

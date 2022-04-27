@@ -1,851 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  position: fixed;
+}
 body {
+  background-color: #f4f4f5;
+  height: 2000px;
   margin: 0 auto;
-  background-color: rgb(229, 236, 243);
-  box-sizing: border-box;
-  color: rgb(63, 63, 73);
 }
-.fuwafuwa {
-  animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
-  background: url("/image/tora.png") no-repeat center center / 200px auto;
-
-  transition: 1.5s ease-in-out;
-  width: 300px;
-  height: 300px;
-  bottom: 5px;
-  left: 250px;
+.logo {
   position: fixed;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  top: 15px;
+  left: 5px;
 }
-
-@keyframes fuwafuwa {
-  0% {
-    transform: translate(0, 0) rotate(-7deg);
-  }
-  50% {
-    transform: translate(0, -7px) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(7deg);
-  }
-}
-.fuwafuwa2 {
-  animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-  background: url("/image/pien.png") no-repeat center center / 200px auto;
-
-  transition: 1.5s ease-in-out;
-  width: 300px;
-  height: 300px;
-  bottom: 5px;
-  left: 1250px;
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-@keyframes fuwafuwa2 {
-  0% {
-    transform: translate(0, 0) rotate(7deg);
-  }
-  50% {
-    transform: translate(0, -7px) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(-7deg);
-  }
-}
-@media screen and (max-width: 680px) {
-  body {
-    width: 680px;
-    margin: 0 auto;
-  }
-  .fuwafuwa {
-    animation: fuwafuwa 2.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/tora.png") no-repeat center center / 120px auto;
-
-    transition: 1.5s ease-in-out;
-    width: 225px;
-    height: 225px;
-    bottom: 5px;
-    left: -15px;
-    position: fixed;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .fuwafuwa2 {
-    animation: fuwafuwa2 3.5s infinite ease-in-out 0.8s alternate;
-    background: url("/image/pien.png") no-repeat center center / 125px auto;
-
-    transition: 1.5s ease-in-out;
-    width: 200px;
-    height: 200px;
-    bottom: 5px;
-    left: 475px;
-    position: fixed;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-}
-.all a {
-  text-decoration: none;
-  color: rgb(94, 80, 145);
-  transition: 0.5s;
-}
-.all li {
-  display: inline-block;
-  width: 110px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: "Arial Narrow";
-}
-.all ul {
-  text-align: center;
-  position: fixed;
-
-  background-color: rgb(246, 250, 253);
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  margin-top: 0px;
-
-  z-index: 100;
-}
-.all {
-  list-style: none;
-}
-.current-page {
-  background-color: rgb(229, 236, 243);
-  padding: 5px 0px;
-}
-
-.all li a:hover {
-  background-color: rgb(229, 236, 243);
-  padding: 5px 15px;
-  width: 340px;
-}
-.all a:hover img {
-  opacity: 0.6;
-  transition: 0.5s;
-}
-ul img {
-  width: 30px;
-  margin-bottom: -5px;
-}
-img[alt="twitter"] {
-  margin-left: 50px;
-  margin-right: 10px;
-}
-.topimage {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  animation: anime1 2s ease; /* アニメーション指定 */
-}
-@keyframes anime1 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-  }
-  100% {
-    opacity: 1; /* 透明度指定 */
-  }
-}
-.topheader {
-  text-align: center;
-
-  margin-top: -500px;
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 5px;
-  color: rgb(43, 68, 182);
-  font-size: 25px;
-
-  position: relative;
-  animation: anime2 2s ease; /* アニメーション指定 */
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
-}
-@keyframes anime2 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-    top: 25px;
-  }
-  100% {
-    opacity: 1; /* 透明度指定 */
-    top: 0;
-  }
-}
-
-header p {
-  margin-top: -50px;
-  color: rgb(143, 187, 207);
-}
-
-.schoolwork {
-  margin-top: 400px;
-  text-align: center;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2s;
-  animation-fill-mode: backwards;
-}
-
-.schoolwork h3 {
-  margin-top: 200px;
-  font-size: 35px;
-  margin-bottom: 0px;
-  color: rgb(64, 10, 114);
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 2px;
-}
-.schoolwork img {
-  margin-top: 10px;
-}
-.schoolwork p {
-  font-size: 20px;
-  margin-top: 10px;
-}
-.schoolwork a {
-  transition: 0.5s;
-}
-
-.schoolwork a:hover img {
-  transition: 0.5s;
-  opacity: 0.6;
-  width: 825px;
-}
-.works {
-  text-align: center;
-  color: rgb(64, 10, 114);
-}
-.works h3 {
-  margin-top: 250px;
+.merumo {
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 30px;
-  margin-bottom: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 2px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
+  top: 15px;
+  left: 100px;
+  position: fixed;
 }
-.worksimages1 {
+
+/* ここから下がハンバーガーメニューに関するCSS */
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+
+  right: 40px;
+  z-index: 100; /* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40px;
+
+  border-radius: 2px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 14px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 14px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background-color: rgb(129, 201, 243);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: rgb(129, 201, 243);
+}
+
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: rgb(121, 122, 122);
+  transition: 0.5s;
+
+  padding-top: 20px;
+}
+.nav_content img {
+  max-width: 100%;
+
+  position: absolute;
+  bottom: 0px;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+  margin-top: 90px;
+}
+
+.nav_item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 30px;
+  font-family: ab-andante, sans-serif;
+}
+.current-page a {
+  color: rgb(129, 201, 243);
+  text-decoration: none;
+  font-size: 30px;
+  font-family: ab-andante, sans-serif;
+}
+
+.nav_list li {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0; /* メニューを画面に入れる */
+}
+
+.taitleimg {
+  max-width: 100%;
+  margin: 0 auto;
   text-align: center;
+}
+.work h1 {
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+.work {
+  text-align: center;
+  margin-top: 350px;
+  margin-bottom: -150px;
+  max-width: 400px;
+}
+.white img,
+.black img {
+  max-width: 225px;
+  border-radius: 0.2cm;
+  margin-top: 25px;
+  max-height: 150px;
+}
+.white {
+  background-color: white;
+  width: 300px;
+  margin: 0 auto;
+  /* padding-top: 25px;
+  padding-bottom: 75px; */
+
+  height: 290px;
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 10px -1px rgb(205, 207, 211);
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.black {
+  background-color: #3e4b5a;
+  color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  height: 290px;
+
+  /* padding-top: 25px;
+  padding-bottom: 75px; */
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.7s;
-  animation-fill-mode: backwards;
 }
-.worksimages img {
+.another img {
+  width: 150px;
+  border-radius: 0.3cm;
+  box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+.icon img {
+  width: 40px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.worksimages a {
-  transition: 0.5s;
-}
-.worksimages a:hover {
-  opacity: 0.6;
-}
-.worksimages a:hover img {
-  transition: 0.5s;
-  width: 525px;
-}
-
-.worksimages strong {
-  font-size: 20px;
-}
-.worksimages p {
-  font-size: 15px;
-  margin-top: 10px;
-}
-.worksimages2 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 4.1s;
-  animation-fill-mode: backwards;
-}
-.worksimages3 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-.worksimages5 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.9s;
-  animation-fill-mode: backwards;
-}
-.worksimages4 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 150px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 3.5s;
-  animation-fill-mode: backwards;
-}
-.worksimages6 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.6s;
-  animation-fill-mode: backwards;
-}
-.worksimages7 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.7s;
-  animation-fill-mode: backwards;
-}
-.worksimages8 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.8s;
-  animation-fill-mode: backwards;
-}
-.worksimages9 {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 2.9s;
-  animation-fill-mode: backwards;
-}
-.twitter a:hover {
-  transition: 0.5s;
-  opacity: 0.6;
-}
-
-.twitter {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.icon {
   margin-top: 300px;
-  margin-bottom: -25px;
-
-  position: relative;
-  animation: anime2 0.8s ease;
-  animation-delay: 4.5s;
-  animation-fill-mode: backwards;
-}
-.twitter img {
-  margin: 25px;
-}
-.twitter p {
   text-align: center;
-  margin-left: 0px;
-  margin-top: 0px;
-  font-size: small;
+  margin-bottom: 50px;
+}
+.sikaku img {
+  width: 100px;
+}
+footer p {
+  color: #fff;
 }
 footer {
-  text-align: center;
-  background-color: rgb(97, 83, 145);
-  padding-top: 10px;
+  background-color: #1f569e;
+  padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 50px;
-  color: rgb(224, 230, 235);
-}
-.PROFILE {
   text-align: center;
-  padding-top: 100px;
 }
-.PROFILE h2 {
-  font-size: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 5px;
-  color: rgb(64, 10, 114);
-  display: block; /* ブロック要素にする */
+@media screen and (min-width: 768px) {
+  .nav_list {
+    display: flex;
+    justify-content: right;
+    height: 75px;
+    margin-top: 0px;
+    align-items: center;
+    right: 125px;
+    top: 10px;
 
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-}
-.PROFILE img[alt="icon"] {
-  margin-top: 30px;
-  width: 250px;
-  margin-bottom: -20px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
-}
-.PROFILE img[alt="sns"] {
-  max-width: 25px;
-  margin-top: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.profilewrite strong {
-  font-size: 30px;
-}
-.name p::first-letter {
-  font-size: 50px;
-}
-.name {
-  margin-top: 35px;
-  color: rgb(37, 76, 150);
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
-}
-.student {
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.8s;
-  animation-fill-mode: backwards;
-}
-.profilewrite p {
-  margin-top: -25px;
-  font-weight: bold;
-  font-size: 15px;
-}
-.content {
-  display: block; /* ブロック要素にする */
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
-}
-.profilewrite a {
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.2s;
-  animation-fill-mode: backwards;
-}
-@keyframes anime3 {
-  0% {
-    opacity: 0; /* 透明度指定 */
-    top: 30px; /* 位置指定 */
+    width: 100%;
+    /* margin-left: 400px; */
   }
-  100% {
-    opacity: 1; /* 透明度指定 */
-    top: 0; /* 位置指定 */
+  ul {
+    position: fixed;
+  }
+  .nav_list li {
+    margin-left: 30px;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: ab-andante, sans-serif;
+  }
+  .nav_item a {
+    color: #333;
+  }
+  .drawer_open {
+    display: none;
+  }
+  .current-page a {
+    color: rgba(62, 64, 66, 0.473);
+  }
+  .nav_content {
+    position: relative;
+  }
+  .nav_content img {
+    display: none;
+  }
+  .taitleimg img {
+    max-width: 500px;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .work h1 {
+    font-family: ab-andante, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .white img,
+  .black img {
+    max-width: 275px;
+    border-radius: 0.2cm;
+    margin-top: 25px;
+    max-height: 200px;
+  }
+  .white {
+    background-color: white;
+    width: 350px;
+    margin: 0 auto;
+    /* padding-top: 25px;
+    padding-bottom: 75px; */
+
+    height: 340px;
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 10px -1px rgb(205, 207, 211);
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .black {
+    background-color: #3e4b5a;
+    color: #fff;
+    width: 350px;
+    margin: 0 auto;
+    height: 340px;
+
+    /* padding-top: 25px;
+    padding-bottom: 75px; */
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .work {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 350px;
+    max-width: 1600px;
+  }
+  .flex div {
+    margin-left: 75px;
+  }
+  .another img {
+    width: 350px;
+    border-radius: 0.3cm;
+    box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+  .sikaku img {
+    width: 200px;
   }
 }
-
-.content p {
-  margin-top: 15px;
-  font-weight: normal;
+@media screen and (max-width: 959px) {
+  .taitleimg img {
+    max-width: 450px;
+    margin-top: 300px;
+  }
 }
-.profilewrite a img {
-  transition: 0.5s;
+@media screen and (max-width: 480px) {
+  .taitleimg img {
+    max-width: 300px;
+    margin-top: 250px;
+  }
 }
-.profilewrite a:hover img {
-  transition: 0.5s;
-  opacity: 0.6;
-}
-
-hr {
-  margin-top: 70px;
-  border-top: dashed 1px;
-}
-
-.button a {
-  box-sizing: border-box;
-  display: absolute;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  border: solid 6px rgb(117, 164, 218);
-  border-radius: 50%;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
-  opacity: 0.95;
-  bottom: 100px;
-  left: 200px;
-}
-.button a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(117, 164, 218);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0, 0);
-  transition: transform ease 0.4s;
-}
-
-.button a:hover:after {
-  transform: translate(-50%, -50%) scale(1.1, 1.1);
-}
-
-.button a:before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  top: 55%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-style: solid;
-  border-color: rgb(117, 164, 218);
-  border-width: 6px 0 0 6px;
-
-  transform: translate(-50%, -50%) rotate(45deg);
-  transition: border-color ease 0.1s;
-}
-
-.button a:hover:before {
-  border-color: #fff;
-}
-.hobby {
-  text-align: center;
-  padding-top: 125px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.hobby img {
-  max-width: 100%;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 0.5s;
-  animation-fill-mode: backwards;
-}
-.hobbyheader h2,
-.hobbyheader p {
-  text-align: left;
-
-  font-size: 50px;
-  margin-top: -450px;
-}
-.hobby h2 {
-  color: rgb(255, 255, 255);
-  margin-left: 230px;
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.5s;
-  animation-fill-mode: backwards;
-}
-.hobby p {
-  margin-top: -60px;
-  color: rgb(251, 252, 253);
-  font-size: 30px;
-  margin-left: 190px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.9s;
-  animation-fill-mode: backwards;
-}
-.hobbynav ul {
-  margin-top: -15px;
-}
-.hobbynav li {
-  text-align: left;
-  margin-left: 240px;
-  list-style-type: none;
-  margin-bottom: 15px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-}
-.hobbynav a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: larger;
-
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  text-decoration: none;
-}
-
-.hobbynav a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  transform: translate(-100%, 0);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
-  content: "";
-}
-
-.hobbynav a:hover:after {
-  transform: translate(0, 0);
-}
-.hobbynav li::first-letter {
-  color: rgb(66, 79, 150);
-}
-.hobbynav + p {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 230px;
-}
-.PHOTO {
-  margin-left: 300px;
-  margin-top: -730px;
-  margin-bottom: -70px;
-  font-size: 40px;
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(18, 54, 99);
-}
-
-img[alt="camera"] {
-  margin-top: 350px;
-}
-.mainhobbyphoto img {
-  text-align: center;
-  max-width: 100%;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.5s;
-  animation-fill-mode: backwards;
-}
-.mainhobbyphoto {
-  text-align: center;
-}
-
-.subhobbyphoto {
-  max-width: 1050px;
-  margin: 200px auto;
-  margin-top: 250px;
-  margin-bottom: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 2.7s;
-  animation-fill-mode: backwards;
-}
-.subhobbyphoto img {
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 50px;
-  width: 300px;
-}
-.subhobbyphoto a {
-  transition: 0.5s;
-}
-.subhobbyphoto a:hover {
-  opacity: 0.6;
-}
-.subhobbyphoto a:hover img[id="ILLUST"] {
-  width: 325px;
-  transition: 0.5s;
-}
-.hobbyall {
-  max-width: 1900px;
-  margin: 0 auto;
-}
-.another h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  margin-top: 200px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby {
-  background: rgba(141, 186, 207, 0.6);
-  padding: 100px;
-  color: aliceblue;
-  margin-top: -55px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 20px;
-}
-
-.anotherhobby a {
-  transition: 0.5s;
-}
-.anotherhobby a:hover {
-  opacity: 0.6;
-}
-.anotherhobby1 img,
-.anotherhobby1 video {
-  max-width: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.anotherhobby figcaption {
-  margin-top: -10px;
-}
-.anotherhobby1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.2s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby2 video,
-.anotherhobby2 img {
-  max-width: 300px;
-  max-height: 300px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-.anotherhobby3 video,
-.anotherhobby3 img {
-  max-width: 450px;
-  max-height: 450px;
-}
-.anotherhobby2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.4s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.5s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.9s;
-  animation-fill-mode: backwards;
-}
-.another h3 {
-  margin-top: 200px;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 3.7s;
-  animation-fill-mode: backwards;
-}
-.anotherhobby4 img {
-  max-width: 300px;
-}
-.anotherhobby5 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-.anotherhobby5 img {
-  max-width: 500px;
-}
-.anotherhobby5 a:hover {
-  opacity: 0.7;
-}
-.lastmessege img {
-  max-width: 250px;
-  text-align: center;
-  margin-top: -70px;
-  margin-bottom: -50px;
-}
-.lastmessege {
-  margin-top: 100px;
-  text-align: center;
-
-  position: relative; /* 位置指定 */
-  animation: anime3 1s ease; /* アニメーション指定 */
-  animation-delay: 4s;
-  animation-fill-mode: backwards;
-}
-.lastmessege {
-  color: dimgray;
-  font-size: 25px;
+@media screen and (max-width: 380px) {
+  .taitleimg img {
+    max-width: 275px;
+    margin-top: 175px;
+  }
 }
