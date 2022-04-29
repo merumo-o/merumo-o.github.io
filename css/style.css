@@ -197,7 +197,7 @@ body {
   flex-wrap: wrap;
 }
 .another img {
-  width: 150px;
+  width: 130px;
   border-radius: 0.3cm;
   box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
   margin-left: 15px;
@@ -214,9 +214,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-.sikaku img {
-  width: 100px;
-}
+
 footer p {
   color: #fff;
 }
@@ -294,6 +292,8 @@ footer {
     box-shadow: 1px 2.5px 10px -1px rgb(205, 207, 211);
     margin-top: 25px;
     margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
   }
   .black {
     background-color: #3e4b5a;
@@ -308,26 +308,27 @@ footer {
     box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
     margin-top: 25px;
     margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
   }
   .work {
     margin: 0 auto;
     text-align: center;
-    margin-top: 350px;
-    max-width: 1600px;
+    margin-top: 360px;
+    max-width: 1500px;
   }
-  .flex div {
-    margin-left: 75px;
-  }
+
   .another img {
-    width: 350px;
-    border-radius: 0.3cm;
+    border-radius: 50%;
     box-shadow: 1px 2.5px 5px -1px rgb(148, 150, 153);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 28px;
+    margin-right: 28px;
     margin-top: 50px;
+    width: 175px;
   }
-  .sikaku img {
-    width: 200px;
+
+  .another {
+    margin-top: -15px;
   }
 }
 @media screen and (max-width: 959px) {
