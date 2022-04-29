@@ -6,7 +6,8 @@ html {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-
+  position: absolute;
+  z-index: 50;
   position: fixed;
 }
 body {
@@ -16,7 +17,7 @@ body {
 }
 .logo {
   position: fixed;
-  top: 15px;
+  top: 5px;
   left: 5px;
 }
 .merumo {
@@ -24,7 +25,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  top: 15px;
+  top: 10px;
   left: 100px;
   position: fixed;
 }
@@ -146,6 +147,22 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+.taitleimg2 {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.taitleimg2 img {
+  z-index: -50;
+  opacity: 0.5;
+}
+.taitleimg2 h1 {
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
 .work h1 {
   font-family: ab-andante, sans-serif;
   font-style: normal;
@@ -214,7 +231,43 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
+.profile img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.profile {
+  text-align: center;
+}
+.profile h1 {
+  font-family: ab-yogurt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  margin-top: 10px;
+}
+.profile p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+.skill {
+  margin: 0 auto;
+  text-align: center;
+}
+.skill h1 {
+  margin-top: 50px;
+  font-family: ab-andante, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+img[alt="webimg"] {
+  width: 100px;
+}
+.skill img {
+  width: 75px;
+}
 footer p {
   color: #fff;
 }
@@ -232,7 +285,7 @@ footer {
     margin-top: 0px;
     align-items: center;
     right: 125px;
-    top: 10px;
+    top: 5px;
 
     width: 100%;
     /* margin-left: 400px; */
@@ -267,6 +320,18 @@ footer {
     margin-left: 50px;
     margin-right: 50px;
   }
+  .taitleimg2 img {
+    max-width: 450px;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .taitleimg2 h1 {
+    margin-top: -550px;
+    margin-bottom: 650px;
+    font-size: 50px;
+  }
+
   .work h1 {
     font-family: ab-andante, sans-serif;
     font-style: normal;
@@ -336,16 +401,43 @@ footer {
     max-width: 450px;
     margin-top: 300px;
   }
+  .taitleimg2 img {
+    max-width: 475px;
+    margin-top: 200px;
+  }
+  .taitleimg2 h1 {
+    margin-top: -550px;
+    margin-bottom: 650px;
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 480px) {
   .taitleimg img {
     max-width: 300px;
     margin-top: 250px;
   }
+  .taitleimg2 img {
+    max-width: 350px;
+    margin-top: 130px;
+  }
+  .taitleimg2 h1 {
+    margin-top: -400px;
+    margin-bottom: 500px;
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 380px) {
   .taitleimg img {
     max-width: 275px;
     margin-top: 175px;
+  }
+  .taitleimg2 img {
+    max-width: 250px;
+    margin-top: 125px;
+  }
+  .taitleimg2 h1 {
+    margin-top: -300px;
+    margin-bottom: 400px;
+    font-size: 30px;
   }
 }
