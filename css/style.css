@@ -329,7 +329,8 @@ footer {
     height: 75px;
     margin-top: 0px;
     align-items: center;
-    right: 125px;
+    position: fixed;
+    right: 50px;
     top: 5px;
 
     width: 100%;
@@ -502,24 +503,12 @@ footer {
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1370px) {
   .work {
     margin: 0 auto;
     text-align: center;
     margin-top: 360px;
     max-width: 1000px;
-  }
-  .nav_list {
-    display: flex;
-    justify-content: right;
-    height: 75px;
-    margin-top: 0px;
-    align-items: center;
-    right: 50px;
-    top: 5px;
-
-    width: 100%;
-    /* margin-left: 400px; */
   }
 }
 @media screen and (max-width: 959px) {
