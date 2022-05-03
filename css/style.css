@@ -330,9 +330,9 @@ footer {
     margin-top: 0px;
     align-items: center;
     position: fixed;
-    right: 50px;
+    right: 100px;
     top: 5px;
-
+    margin-left: 500px;
     width: 100%;
     /* margin-left: 400px; */
   }
@@ -475,7 +475,7 @@ footer {
   img[alt="webimg"] {
     margin-top: 10px;
     height: 100px;
-    width: 100%;
+    width: 150px;
   }
   .skillflex2 img {
     width: 100px;
@@ -503,7 +503,7 @@ footer {
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1500px) {
   .work {
     margin: 0 auto;
     text-align: center;
