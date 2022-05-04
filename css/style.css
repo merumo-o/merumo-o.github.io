@@ -214,6 +214,7 @@ body {
 }
 .flex {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .another img {
@@ -325,10 +326,10 @@ footer {
 @media screen and (min-width: 768px) {
   .nav_list {
     display: flex;
-    justify-content: right;
+
     height: 75px;
     margin-top: 0px;
-    align-items: center;
+    justify-content: right;
     position: fixed;
     right: 100px;
     top: 5px;
@@ -338,14 +339,17 @@ footer {
   }
   ul {
     position: fixed;
+    justify-content: right;
   }
   .nav_list li {
+    justify-content: right;
     margin-left: 30px;
     margin-left: 30px;
     font-size: 30px;
     font-family: ab-andante, sans-serif;
   }
   .nav_item a {
+    justify-content: right;
     color: #333;
   }
   .drawer_open {
