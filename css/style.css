@@ -535,6 +535,12 @@ footer {
     margin-bottom: -150px;
     max-width: 500px;
   }
+  .nav_list {
+    justify-content: right;
+    position: fixed;
+    right: 50px;
+    top: 5px;
+  }
 }
 @media screen and (max-width: 480px) {
   .taitleimg img {
@@ -549,6 +555,11 @@ footer {
     margin-top: -400px;
     margin-bottom: 500px;
     font-size: 30px;
+  }
+  .nav_list {
+    justify-content: right;
+    position: relative;
+    left: 5px;
   }
 }
 @media screen and (max-width: 380px) {
