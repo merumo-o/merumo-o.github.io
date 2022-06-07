@@ -32,7 +32,9 @@ body {
   left: 100px;
   position: fixed;
 }
-
+a {
+  text-decoration: none;
+}
 /* ここから下がハンバーガーメニューに関するCSS */
 
 /* チェックボックスを非表示にする */
@@ -177,6 +179,7 @@ body {
   margin-top: 350px;
   margin-bottom: -150px;
   max-width: 400px;
+  text-decoration: none;
 }
 .white img,
 .black img {
@@ -187,8 +190,10 @@ body {
 }
 .white {
   background-color: white;
+  font-family: sans-serif;
   width: 300px;
   margin: 0 auto;
+  text-decoration: none;
   /* padding-top: 25px;
   padding-bottom: 75px; */
 
@@ -200,10 +205,12 @@ body {
 }
 .black {
   background-color: #3e4b5a;
+  font-family: sans-serif;
   color: #fff;
   width: 300px;
   margin: 0 auto;
   height: 290px;
+  text-decoration: none;
 
   /* padding-top: 25px;
   padding-bottom: 75px; */
@@ -211,6 +218,12 @@ body {
   box-shadow: 1px 2.5px 10px -1px rgb(82, 83, 85);
   margin-top: 25px;
   margin-bottom: 50px;
+}
+.black a {
+  color: #fff;
+}
+.white a {
+  color: rgb(54, 54, 56);
 }
 .flex {
   display: flex;

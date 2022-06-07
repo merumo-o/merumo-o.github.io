@@ -32,6 +32,37 @@
         s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "bit3lzi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>WORK/merumo</title>
@@ -85,33 +116,45 @@
         <h1>ワーク</h1>
         <div class="flex">
           <div class="white">
-            <img src="./image/movieup.png" alt="" />
+            <a href="https://youtu.be/GIsGz9eZoMk">
+              <img src="./image/movieup.png" alt=""
+            /></a>
             <p>Move up</p>
           </div>
 
           <div class="black">
-            <img src="./image/carsite samune.jpg" alt="" />
-            <p>Car_Selector</p>
+            <a href="./image/carsite.jpg" data-lightbox="group">
+              <img src="./image/carsite samune.jpg" alt="" />
+              <p>Car_Selector</p></a
+            >
           </div>
 
           <div class="white">
-            <img src="./image/aquaMM.png" alt="" />
-            <p>MM_Aquarium</p>
+            <a href="/website2/aqua/area.html">
+              <img src="./image/aquaMM.png" alt="" />
+              <p>MM_Aquarium</p>
+            </a>
           </div>
 
           <div class="black">
-            <img src="./image/dezitarunyumonn.png" alt="" />
-            <p>mowmowバナナ牛乳</p>
+            <a href="./image/dezitarunyumonn.png" data-lightbox="group">
+              <img src="./image/dezitarunyumonn.png" alt="" />
+              <p>mowmowバナナ牛乳</p></a
+            >
           </div>
 
           <div class="white">
-            <img src="./image/cafeweb.png" alt="" />
-            <p>初めて作成したサイト</p>
+            <a href="/websaite/index.html">
+              <img src="./image/cafeweb.png" alt="" />
+              <p>初めて作成したサイト</p></a
+            >
           </div>
 
           <div class="black">
-            <img src="./image/kadaidouga.png" alt="" />
-            <p>またキミの隣で笑えるように</p>
+            <a href="./video/topvideo.mp4">
+              <img src="./image/kadaidouga.png" alt="" />
+              <p>またキミの隣で笑えるように</p></a
+            >
           </div>
         </div>
       </section>
@@ -119,23 +162,50 @@
         <div class="anothername">
           <h1>アナザー</h1>
           <div class="another">
-            <img src="./image/awaji1ー.png" alt="" />
-            <img src="./image/yorunokatasumi 1.png" alt="" />
-            <img src="./image/apexsamune1.png" alt="" />
-            <img src="./image/chupuri 1.png" alt="" />
-            <img src="./image/ofukumochi.jpg" alt="" />
-            <img src="./image/sinderera 1.png" alt="" />
-            <img src="./image/cafe.png" alt="" />
-            <img src="./image/tumikicar1.png" alt="" />
-            <img src="./image/um3.png" alt="" />
-            <img src="./image/onigirikuma.jpeg" alt="" />
-            <img src="./image/kuzira2.png" alt="" />
-            <img src="./image/suraim.png" alt="" />
+            <a href="https://youtu.be/C4OtVILTNPg">
+              <img src="./image/awaji1ー.png" alt=""
+            /></a>
+            <a href="https://youtu.be/ypgqhZR0kzo">
+              <img src="./image/yorunokatasumi 1.png" alt=""
+            /></a>
+            <a href="https://youtu.be/fXRKJjgQgwM">
+              <img src="./image/apexsamune1.png" alt=""
+            /></a>
+            <a href="https://youtu.be/WhVWDi-CJBE">
+              <img src="./image/chupuri 1.png" alt=""
+            /></a>
+            <a href="./image/ofukumochi1.jpg" data-lightbox="group">
+              <img src="./image/ofukumochi.jpg" alt=""
+            /></a>
+
+            <a href="https://youtu.be/ZRVT2jVgE14">
+              <img src="./image/sinderera 1.png" alt="" />
+            </a>
+            <a href="./image/cafe.png" data-lightbox="group">
+              <img src="./image/cafe.png" alt=""
+            /></a>
+            <a href="./image/tumikicar1.png" data-lightbox="group">
+              <img src="./image/tumikicar1.png" alt=""
+            /></a>
+            <a href="./image/um3.png" data-lightbox="group">
+              <img src="./image/um3.png" alt=""
+            /></a>
+            <a href="./image/onigirikuma.jpeg" data-lightbox="group">
+              <img src="./image/onigirikuma.jpeg" alt=""
+            /></a>
+            <a href="./image/kuzira2.png" data-lightbox="group">
+              <img src="./image/kuzira2.png" alt=""
+            /></a>
+            <a href="./image/suraim.png" data-lightbox="group">
+              <img src="./image/suraim.png" alt=""
+            /></a>
           </div>
         </div>
       </section>
       <div class="icon">
-        <img src="./image/twitter2.png" alt="" />
+        <a href="https://twitter.com/meru_ugok">
+          <img src="./image/twitter2.png" alt=""
+        /></a>
         <img src="./image/instagram2 .png" alt="" />
       </div>
       <img src="./image/mizuneko.png" alt="mizuneko2" />
