@@ -16,6 +16,28 @@ body {
   margin: 0 auto;
 }
 
+@keyframes anime1 {
+  0% {
+    opacity: 0; /* 透明度指定 */
+  }
+  100% {
+    opacity: 1; /* 透明度指定 */
+  }
+}
+@keyframes anime2 {
+  0% {
+    opacity: 0; /* 透明度指定 */
+    top: 25px;
+  }
+  100% {
+    opacity: 1; /* 透明度指定 */
+    top: 0;
+  }
+}
+.all a:hover img {
+  opacity: 0.6;
+  transition: 0.5s;
+}
 .logo {
   position: fixed;
   top: 5px;
@@ -142,6 +164,11 @@ a {
   margin-top: 50px;
   margin-left: 75px;
 }
+.nav_list a:hover {
+  transition: 0.5s;
+  opacity: 0.5;
+  color: #1f569e;
+}
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer_input:checked ~ .nav_content {
@@ -152,12 +179,21 @@ a {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
+
 .taitleimg2 {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 25px;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 .taitleimg2 img {
   z-index: -50;
@@ -181,6 +217,18 @@ a {
   margin-bottom: -150px;
   max-width: 400px;
   text-decoration: none;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+.work a:hover {
+  transition: 0.5s;
+  opacity: 0.6;
+}
+.icon a:hover {
+  transition: 0.5s;
+  opacity: 0.6;
 }
 .white img,
 .black img {
@@ -238,6 +286,10 @@ a {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 25px;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 .icon img {
   width: 35px;
@@ -256,6 +308,10 @@ a {
 }
 .profile {
   text-align: center;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 .profile h1 {
   font-family: ab-yogurt, sans-serif;
@@ -272,6 +328,10 @@ a {
 .skill {
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 .skill h1 {
   margin-top: 50px;
@@ -312,6 +372,10 @@ img[alt="webimg"] {
 .photo {
   margin-top: 150px;
   text-align: center;
+  position: relative;
+  animation: anime2 0.8s ease;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 img[alt="mizuneko"] {
   width: 250px;
